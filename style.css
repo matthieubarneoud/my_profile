@@ -21,7 +21,7 @@ h1 {
 
 }
 
-.list-inline{background-color: #71a0a5;
+.list-inline{
 	  padding-left: 0px; /* kill remaining padding left */
 list-style-type: none; }
 
@@ -111,7 +111,7 @@ color: #fab95b;
     text-align: center;}
 
 
-#photo { 
+.photo { 
   width: 150px;
     height: 150px;
     border-radius: 50%;
