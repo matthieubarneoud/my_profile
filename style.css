@@ -2,11 +2,11 @@ body {
   margin-right: 0px;
   margin-left: 0px;
   color: #71a0a5;     /* Text color */
-;  Background-color :#fab95b;
+ Background-color :#fab95b;
 	font-size: 20px;
 	font-family: Aguafina Script, serif;
 		letter-spacing: 1px;
-	text-align: center;
+
 
 }
 
@@ -108,7 +108,7 @@ color: #fab95b;
 /*margin : -30px;*/
     padding: 5PX;
     background-color: black;
-}
+    text-align: center;}
 
 
 #photo { 
@@ -126,6 +126,14 @@ padding-bottom: 10px}
 .container{
 	width: 600px;
 	margin: 0px	auto;
+    text-align: center;
+}
+
+
+#map{
+    width: 600px;
+    height: 300px;
+  margin: 0px auto;
 }
 
 @media (max-width: 960px) {
