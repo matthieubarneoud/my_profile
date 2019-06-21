@@ -23,10 +23,14 @@ h1 {
 
 .list-inline{
 	  padding-left: 0px; /* kill remaining padding left */
-list-style-type: none; }
+list-style-type: none;
+
+ }
 
 .list-inline li {
 display: inline-block;
+margin: 10px;
+
 
 
 }
