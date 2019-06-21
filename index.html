@@ -63,44 +63,52 @@
 				</ol>
 			</div>
 
-		</div>
-		 
+		
+		
 
-		<div id="map" >
-			<style>
-.coordinates {
-background: rgba(0,0,0,0.5);
-color: #fff;
-padding:5px 10px;
-margin: 0;
-font-size: 11px;
-line-height: 18px;
-border-radius: 3px;
-display: none;
-}
-</style>
-		</div>
-		<pre id='coordinates' class='coordinates'></pre>
-			<script>
-			 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGhpZXViZCIsImEiOiJjang0cTlwd3EwMGRtNDBxeW80aXpsdDNkIn0.87ulNCJkJL3PGG8OPc-ecA';
-			  var coordinates = document.getElementById('coordinates');
-			  var map = new mapboxgl.Map({
-			    container: 'map',
-			    style: 'mapbox://styles/matthieubd/cjx4qa3lf04t31cjmp1ju8t2u',
-			    center: [2.3260811,48.8925686],
-zoom: 10
-			  });
-			  var marker = new mapboxgl.Marker({draggable: true})
-			  .setLngLat([2.3260811,48.8925686])
-			  .addTo(map);
-			  function onDragEnd() {
-var lngLat = marker.getLngLat();
-coordinates.style.display = 'block';
-coordinates.innerHTML = 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
-}
- 
-marker.on('dragend', onDragEnd);
-			</script>
+		<div class="card-white">
+			<h2>Coordonnées GPS</h2>
+			</div> 
+
+</div>		
+
+			<div id="map" >
+				<style>
+	.coordinates {
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	padding:5px 10px;
+	margin: 0;
+	font-size: 11px;
+	line-height: 18px;
+	border-radius: 3px;
+	display: none;
+	}
+	</style>
+			</div>
+			<pre id='coordinates' class='coordinates'></pre>
+				<script>
+				 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0dGhpZXViZCIsImEiOiJjang0cTlwd3EwMGRtNDBxeW80aXpsdDNkIn0.87ulNCJkJL3PGG8OPc-ecA';
+				  var coordinates = document.getElementById('coordinates');
+				  var map = new mapboxgl.Map({
+				    container: 'map',
+				    style: 'mapbox://styles/matthieubd/cjx4qa3lf04t31cjmp1ju8t2u',
+				    center: [2.3260811,48.8925686],
+	zoom: 10
+				  });
+				  var marker = new mapboxgl.Marker({draggable: true})
+				  .setLngLat([2.3260811,48.8925686])
+				  .addTo(map);
+				  function onDragEnd() {
+	var lngLat = marker.getLngLat();
+	coordinates.style.display = 'block';
+	coordinates.innerHTML = 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+	}
+	 
+	marker.on('dragend', onDragEnd);
+				</script>
+
+
 		<div class ="background-black">
 			<h2>😀</h2>
 		</div>
